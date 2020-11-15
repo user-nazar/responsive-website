@@ -1,0 +1,186 @@
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info__text {
+    width: 368px;
+}
+
+.sync__text__title {
+    font-weight: bold;
+    font-size: 25px;
+    color: #222222;
+}
+
+.sync__text__parag {
+    margin-top: -20px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #73738D;
+}
+
+.info__text__list {
+    list-style-image: url(../images/green-mark.svg);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -25px;
+}
+
+.item__list__text__info {
+    display: flex;
+    align-content: center;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 150%;
+    color: #73738D;
+}
+
+.info__text__list li:last-child {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .info__text {
+        margin: 35px auto;
+    }
+}
+
+.about__woman {
+    width: 352px;
+    height: 209px;
+    margin-left: 130px;
+    margin-top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 13.8611px 55.4444px #F2F5FA;
+    border-radius: 20px;
+
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.about__woman:hover {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+}
+
+.card-button {
+    width: 258px;
+    height: 44px;
+    border: none;
+    border-radius: 34px;
+    color: #fff;
+    background: #67b42f;
+}
+
+.photo__woman__image {
+    margin: 17px;
+}
+
+.about__woman__biography {
+    display: flex;
+    flex-direction: row;
+}
+
+.about__woman__information {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__woman__information___title {
+    width: 170px;
+    margin-top: 22px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #222222;
+}
+
+.about__woman__information__paragraph {
+    width: 137px;
+    height: 13px;
+    font-weight: 500;
+    font-size: 11px;
+    margin-top: -25px;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.info__more__information {
+    width: 76.24px;
+    height: 11.09px;
+    font-weight: 500;
+    font-size: 9.70278px;
+    line-height: 11px;
+    color: rgba(34, 34, 34, 0.6);
+}
+
+.photo__woman__info__image {
+    width: 11px;
+    height: 11px;
+}
+
+.info__woman__list__information {
+    margin-top: -1px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 120%;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.birthday,
+.job,
+.travel {
+    display: flex;
+}
+
+.info__woman__list {
+    margin-left: -20px;
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    .about__woman {
+        margin: auto;
+    }
+    .info__text__list{
+        margin: auto;
+    }
+    .info__text {
+        width: 100%;
+    }
+    .info__text .paragraph {
+        width: 100%;
+        margin-top: -1rem;
+    }
+}
+
+@media screen and (max-width: 443px) {
+    .about__woman {
+        width: 100%;
+        min-width: 250px;
+    }
+
+    .info__text, .info__text > * {
+        width: 100%;
+    }
+}
