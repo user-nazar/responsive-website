@@ -1,4 +1,4 @@
-# web-lab2
+# web_lab2
 
 # Advanced landing
 
